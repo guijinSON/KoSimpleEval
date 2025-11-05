@@ -24,7 +24,7 @@ def parse_args():
                    help="Top-p / nucleus sampling (1.0 disables)")
     p.add_argument("--output", default=None,
                    help="Output CSV path (auto-generated if omitted)")
-    p.add_argument("--system_prompt", default=""문제 풀이를 마친 후, 최종 정답을 다음 형식으로 작성해 주세요: \\boxed{N}.",
+    p.add_argument("--system_prompt", default="문제 풀이를 마친 후, 최종 정답을 다음 형식으로 작성해 주세요: \\boxed{N}.",
                    help="System prompt text to prepend to every conversation")
     return p.parse_args()
 
