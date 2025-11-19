@@ -14,8 +14,11 @@ elif [ -n "${MODELS:-}" ]; then
 # 3) fallback default list
 else
   MODELS=(
-   "Heoni/kanana_1.5_8b_it_tab1-ru-ab_20251118_5ep"
-    # "Qwen/Qwen2.5-7B"
+  "amphora/q2_5-1.5B-am-v02"
+  "Qwen/Qwen2.5-1.5B-Instruct"
+  "Qwen/Qwen2.5-Math-1.5B-Instruct"
+  "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+  "Qwen/Qwen3-1.7B"
   )
 fi
 
