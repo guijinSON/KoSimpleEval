@@ -14,10 +14,9 @@ models=(
 )
 
 datasets=(
-  "AIME2024"
-  "AIME2025"
-  "GPQA"
-  "MMLU-Pro"
+  "KMMLU_Redux"
+  "HRB1_0"
+  "MCLM"
 )
 
 prompt='Solve the question and return you final answer in the following format: \boxed{N}.'
@@ -31,5 +30,6 @@ for m in "${models[@]}"; do
       --system_prompt "$prompt"
   done
 done
+
 
 
